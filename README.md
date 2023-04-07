@@ -1,8 +1,8 @@
-# Point·E
+# MLAB Rendition of Point·E
 
-![Animation of four 3D point clouds rotating](point_e/examples/paper_banner.gif)
+The goal is to ultimately create a pipeline that allows for direct text to generation of 3D models in the context of VR scene generation. A current notion of a pipeline that we are working on is leveraging openAI's point-e system that can then be converted to meshes before being rendered in some given 3D environment.
 
-This is the official code and model release for [Point-E: A System for Generating 3D Point Clouds from Complex Prompts](https://arxiv.org/abs/2212.08751).
+Note that a full reference of the point-e system can be found [here](https://github.com/openai/point-e).
 
 # Usage
 
@@ -21,8 +21,3 @@ For our P-FID and P-IS evaluation scripts, see:
 
 For our Blender rendering code, see [blender_script.py](point_e/evals/scripts/blender_script.py)
 
-# Samples
-
-You can download the seed images and point clouds corresponding to the paper banner images [here](https://openaipublic.azureedge.net/main/point-e/banner_pcs.zip).
-
-You can download the seed images used for COCO CLIP R-Precision evaluations [here](https://openaipublic.azureedge.net/main/point-e/coco_images.zip).
