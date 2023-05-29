@@ -19,7 +19,7 @@ def marching_cubes_mesh(
     side_length: float = 1.02,
     fill_vertex_channels: bool = True,
     progress: bool = False,
-) -> TriMesh:
+):
     """
     Run marching cubes on the SDF predicted from a point cloud to produce a
     mesh representing the 3D surface.
@@ -73,6 +73,8 @@ def marching_cubes_mesh(
         allow_degenerate=False,
         spacing=(voxel_size,) * 3,
     )
+
+    return verts, faces, normals
 
     # The triangles follow the left-hand rule, but we want to
     # follow the right-hand rule.
